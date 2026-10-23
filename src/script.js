@@ -74,9 +74,9 @@ console.log("Их значения (часы):", lowBatteryDevices);
 console.log("Доля от всех устройств:", lowBatteryShare.toFixed(1) + "%");
 
 if (avgHours < 6) {
-    console.log("⚠️ Стоит обратить внимание на энергоэффективность");
+    console.log("Стоит обратить внимание на энергоэффективность");
 } else {
-    console.log("✅ Энергоэффективность в норме");
+    console.log("Энергоэффективность в норме");
 }
 
 alert(
@@ -94,7 +94,7 @@ if (resultBlock) {
         <p><strong>Сумма:</strong> ${totalHours} ч</p>
         <p><strong>Устройств с малым временем (≤ 4 ч):</strong> ${lowBatteryCount}
            (${lowBatteryShare.toFixed(1)}%)</p>
-        <p><strong>Среднее &lt; 6 ч?</strong> ${avgHours < 6 ? "Да — обратите внимание на энергоэффективность ⚠️" : "Нет ✅"}</p>
+        <p><strong>Среднее &lt; 6 ч?</strong> ${avgHours < 6 ? "Да — обратите внимание на энергоэффективность ⚠️" : "Нет "}</p>
     `;
 }
 
